@@ -7,8 +7,8 @@
     <script src="./script/script.js" defer></script>
     <title>TODO-LIST</title>
 </head>
-<body>
-    <main class="relative">
+<body class="select-none">
+    <main class="flex">
         <aside class="h-screen fixed w-[20vw] bg-black text-white delay-10 duration-[850ms] -translate-x-[16.25vw]">
             <div class="px-5 pt-5">
 
@@ -22,9 +22,60 @@
                     </div>
                 </div>
 
-                
+                <!-- Todo Lists Count & Add Button-->
+      
+                <div class="flex justify-between items-center bg-white my-4 py-3 rounded-xl px-2 ListTitle hidden">
+                    <div class="flex justify-center items-center">
+                        <p class="text-sm px-1 text-black">Lists 
+                            <p class="bg-gray-200 text-sm  text-gray-500 px-1 mx-2 rounded-full">Count: <span class="listCount">0</span></p>
+                        </p>
+                    </div>
+                    
+                    <div class="flex justify-center items-center px-1.5">
+                        <button class="cursor-pointer addItembtn">
+                            <img src="./Icons/Add.svg" alt="Add Item" class="w-5">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Todo Lists Items-->
+
+                <div class="my-3">
+                    <div>
+                        <ul class="sidebarTaskList hidden">
+
+                            <!-- The list items are Dynamically added. -->
+                            
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </aside>
+
+        <!-- Add Aside Tasks Title Name -->
+
+        <div class="bg-transparent text-white w-screen h-screen flex justify-center items-center titleFormDiv hidden ">
+            <div class="scale-110 shadow-2xl rounded-2xl py-5 shadow-black px-5">
+                <div class="flex justify-end pb-3">
+                    <button class="closeAddTaskIcon cursor-pointer">
+                        <img src="./Icons/Cross.svg" alt="Close Icon" class="size-7">
+                    </button>
+                </div>
+
+                <div>
+                    <form action="javascript:void(0)" class="flex justify-between items-center gap-3">
+                        <div>
+                            <input type="text" class="bg-white text-gray-600 border-gray-400 border-1 rounded-xl px-5 py-2 w-[25vw] AddTitleItemInput" placeholder="Enter Title" required>
+                        </div>
+                        <div>
+                            <button class="text-white bg-blue-500 px-7 py-[0.5vw] rounded-lg cursor-pointer AddTitleItem">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </main>
 </body>
 </html>
