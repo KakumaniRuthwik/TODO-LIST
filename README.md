@@ -8,19 +8,21 @@ This is a simple Todo List application where you can add, delete, and navigate b
 ```
 src/
 │
-├── css/
-│   └── output.css              # Compiled CSS file
 ├── Icons/
 │   └── Hamburger.svg           # Menu icon for sidebar toggle
 │   └── Close.svg               # Close icon for sidebar toggle
 │   └── Add.svg                 # Add item icon for the todo list
 │   └── Cross.svg               # Close icon for adding new task
 │   └── ellipsis.svg            # Ellipsis icon for the more options button
+├── css/
+│   └── input.css
+│   └── output.css              # Compiled CSS file
 ├── script/
 │   └── script.js               # Main JavaScript file handling app logic
-├── index.html                  # Main HTML file
-└── README.md                   # Project documentation (this file)
+├── index.html                   # Main HTML file
+└── README.md                    # Project documentation (this file)
 ```
+
 
 ## Features
 
